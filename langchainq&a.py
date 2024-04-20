@@ -10,16 +10,10 @@ Original file is located at
 ! pip install -r requirements.txt
 
 from langchain.llms import GooglePalm
-api_key="AIzaSyCEnRJrgPteYyOmBLAUBv3jzUSbPaRMguo"
+api_key=" "
 llm=GooglePalm(google_api_key=api_key,temperature=0.8)
 
-'''
-import os
 
-os.environ["OPENAI_API_KEY"] = "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"
-os.environ["COHERE_API_KEY"] = "Qc8FHVrnkOecwMI1hG0ca7RJSgMdicb342XSdz5z"
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
-'''
 
 llm("write an email requesting refund")
 
